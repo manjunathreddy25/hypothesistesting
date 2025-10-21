@@ -22,7 +22,8 @@ import numpy as np
 
 from google.colab import files
 uploaded = files.upload()
-
+print(uploaded.key)
+df = pd.describe()
 dataset = pd.read_csv('dataset.csv')
 print(dataset.shape)
 print(dataset.head(5))
